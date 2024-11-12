@@ -9,7 +9,8 @@ import { useEffect, useState, useRef } from "react";
 import FAQSection from "@/components/Home/FAQSection";
 import FormSection from "@/components/Home/FormSection";
 import IPSSection from "@/components/Home/IPSSection";
-import { useInView } from "@/hooks/useViewHook";
+
+
 const ParallaxContainer = ({ children }) => {
   return (
     <div className="mt-20">
@@ -21,12 +22,12 @@ const ParallaxContainer = ({ children }) => {
         speed={-15}
       >
         {children}
-      </Parallax>{" "}
+      </Parallax>
     </div>
   );
 };
 
-const Home = () =>{
+const Home = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -42,8 +43,8 @@ const Home = () =>{
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-  const refs = Array.from({ length: 9 }, () => useRef(null));
-  const isInView = refs.map((ref) => useInView(ref));
+
+
   return (
     <Layout>
       <HeroSection />
@@ -61,10 +62,12 @@ const Home = () =>{
       </Container>
 
       <ParallaxContainer>
-        <img
+        <Image
           src={"/home/boxing.svg"}
           alt="Parallax Effect"
           className="w-full"
+          width={800}
+          height={200}
         />
       </ParallaxContainer>
 
@@ -122,9 +125,8 @@ const Home = () =>{
               return (
                 <motion.div
                   key={i}
-                  ref={refs[i]} // Assign the correct ref to each item
                   initial="hidden"
-                  animate={isInView[i] ? "visible" : "hidden"}
+                  animate={"visible"}
                   variants={revealVariants}
                   className="overflow-hidden"
                 >
@@ -167,6 +169,6 @@ const Home = () =>{
       <FormSection />
     </Layout>
   );
-}
+};
 
 export default Home;
