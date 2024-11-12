@@ -29,7 +29,7 @@ export const Form = () => {
         className="w-full mt-8 bg-white border-none px-4 py-3 placeholder:text-[#7E7E7E] focus:outline-none "
       />
       <div className="mt-8">
-        <label className="text-sm opacity-80">
+        <label className="text-sm opacity-80 text-white">
           Some details about your project
         </label>
         <textarea

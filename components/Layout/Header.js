@@ -66,7 +66,7 @@ export default function Header() {
             </a>
           </li>
         </ul>
-        <button className="w-64 border-none bg-darkRed py-2 text-center rounded-full font-semibold">
+        <button onClick={()=>{window.location.replace('/contact')}} className="w-64 border-none bg-darkRed py-2 text-center rounded-full font-semibold">
         Request a call back
         </button>
       </nav>
