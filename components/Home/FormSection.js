@@ -4,8 +4,8 @@ import Image from "next/image";
 
 export const Form = () => {
   return (
-    <div className="flex flex-col justify-between">
-      <div className="capitalize text-6xl mb-10 font-light">
+    <div className="flex flex-col text-black justify-between">
+      <div className="capitalize text-white text-6xl mb-10 font-light">
         please fill the form and we will contact you
       </div>
       <input
