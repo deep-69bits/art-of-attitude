@@ -22,29 +22,46 @@ const Arrow = () => {
 const FAQData = [
   {
     question: "Build IP’s",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!",
+    answer: [
+      "Build new properties for your business requirements",
+      "Fan engagement, Employee engagement, Monetization, Brand awareness.",
+      "We ideate, build and operate custom properties to establish and supersede your objective "
+    ]
   },
   {
-    question: "Immersive + Interactive Tech",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!",
+    question: "Immersive + Interactive Tech ",
+    answer: [
+      "Craft mobile apps, metaverse,NFTs, customised video games, AR/VR",
+      "Gamification",
+      "On-site fan experience"
+    ]
   },
   {
-    question: "Brand Integrations + Sponsorship",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!",
-  },
-  {
-    question: "Content Management & Production",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!",
+    question: "Sponsorship + Brand Integrations",
+    answer: [
+      "Build opportunities for brand integrations",
+      "Provide more to your sponsor with engaged and ever increasing fan base ",
+      "Consult teams / leagues on impactful new sponsorship opportunities",
+      "Advise brands on value and opportunities in sponsorship in sports, e-sports"
+    ]
   },
   {
     question: "Media Rights & Licensing",
-    answer:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui dicta minus molestiae vel beatae natus eveniet ratione temporibus aperiam harum alias officiis assumenda officia quibusdam deleniti eos cupiditate dolore doloribus!",
+    answer: [
+      "Drive revenue via targeted media rights deals.",
+      "Expand reach with exclusive content licensing.",
+      "Boost fan engagement through strategic media partnerships."
+    ]
   },
+  {
+    question: "Content Management & Production",
+    answer: [
+      "Create high-impact content for multi-platform engagement.",
+      "Streamline production to deliver quality and consistency.",
+      "Tailor content to boost fan connection and brand loyalty."
+    ]
+  },
+  
 ];
 
 const FAQSection = () => {
@@ -76,8 +93,10 @@ const FAQSection = () => {
                 </span>
               </div>
               {question == index ? (
-                <div className="text-4xl lg:w-[95%] w-full font-light mt-4 flex items-center justify-between">
-                  {item.answer}
+                <div className="text-4xl lg:w-[95%] w-full font-light mt-4  items-center justify-between">
+                  {item.answer.map((it,ind)=>{
+                    return <li key={ind}>{it}</li>
+                  })}
                 </div>
               ) : null}
               <hr className="border-[0.5px] opacity-65 mt-4 border-darkRed text-darkRed bg-darkRed"></hr>

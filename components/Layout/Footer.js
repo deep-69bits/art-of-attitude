@@ -20,66 +20,77 @@ const Footer = () => {
           <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
             <div>
               <p className="font-medium text-gray-900 dark:text-white">
-                Services
+                Contact
               </p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    1on1 Coaching
-                  </a>
+                  <div className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    Art Of Attitude Ventures LLP 1804, Sector 33 D Chandigarh,
+                    India
+                  </div>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    Company Review
-                  </a>
+                  <div className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    gg@artofattitude.com
+                  </div>
                 </li>
 
                 <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    Accounts Review
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    HR Consulting
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    SEO Optimisation
-                  </a>
+                  <div className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                    +91 88604 26504
+                  </div>
                 </li>
               </ul>
             </div>
 
             <div>
               <p className="font-medium text-gray-900 dark:text-white">
-                Company
+                Expertise
               </p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
+                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  design and development
+                  </div>
+                </li>{" "}
+                <li>
+                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  web 3.0
+                  </div>
+                </li>{" "}
+                <li>
+                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  Virtual in-match events
+                  </div>
+                </li>{" "}
+                <li>
+                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  immersive overlays  
+                  </div>
+                </li>{" "}
+                <li>
+                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  vR experiences
+                  </div>
+                </li>{" "}
+                <li>
+                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  Immersive engagement
+                  </div>
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <p className="font-medium text-gray-900 dark:text-white">Pages</p>
+
+              <ul className="mt-6 space-y-4 text-sm">
+                <li>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     About
@@ -91,7 +102,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
-                    Meet the Team
+                    Technology
                   </a>
                 </li>
 
@@ -100,57 +111,41 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
-                    Accounts Review
+                    Non-Tech Space
                   </a>
                 </li>
-              </ul>
-            </div>
 
-            <div>
-              <p className="font-medium text-gray-900 dark:text-white">
-                Helpful Links
-              </p>
-
-              <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    Our IPs
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="/contact"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Contact
                   </a>
                 </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    FAQs
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    Live Chat
-                  </a>
-                </li>
               </ul>
             </div>
 
+
             <div>
-              <p className="font-medium text-gray-900 dark:text-white">Legal</p>
+              <p className="font-medium text-gray-900 dark:text-white">Social Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <a
-                    href="#"
+                    href="/about"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
-                    Accessibility
+                    Linkedin
                   </a>
                 </li>
 
@@ -159,7 +154,7 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
-                    Returns Policy
+                    Twitter 
                   </a>
                 </li>
 
@@ -168,18 +163,19 @@ const Footer = () => {
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
-                    Refund Policy
+                    Facebook
                   </a>
                 </li>
 
                 <li>
                   <a
-                    href="#"
+                    href="/"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
-                    Hiring Statistics
+                    Instagram
                   </a>
                 </li>
+
               </ul>
             </div>
           </div>
