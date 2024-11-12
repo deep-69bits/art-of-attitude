@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import Image from "next/image";
 const Footer = () => {
   return (
@@ -89,48 +90,48 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href="/about"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     About
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Technology
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Non-Tech Space
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Our IPs
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="/contact"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -141,39 +142,39 @@ const Footer = () => {
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <a
+                  <Link
                     href="/about"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Linkedin
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Twitter 
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="#"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Facebook
-                  </a>
+                  </Link>
                 </li>
 
                 <li>
-                  <a
+                  <Link
                     href="/"
                     className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
                   >
                     Instagram
-                  </a>
+                  </Link>
                 </li>
 
               </ul>
