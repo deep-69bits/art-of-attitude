@@ -5,9 +5,10 @@ import { Parallax } from "react-scroll-parallax";
 
 const ParallaxContainer = ({ children }) => {
   return (
-    <div className="my-40">
+    <div className="lg:my-40">
       <Parallax
         easing="easeInOut"
+        className="hidden lg:block"
         shouldAlwaysCompleteAnimation={true}
         translateY={["-100px", "100px"]}
         opacity={[0, 1]}
@@ -15,6 +16,7 @@ const ParallaxContainer = ({ children }) => {
       >
         {children}
       </Parallax>{" "}
+      <div className="block lg:hidden">{children}</div>
     </div>
   );
 };

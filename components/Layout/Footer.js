@@ -4,7 +4,7 @@ import Image from "next/image";
 const Footer = () => {
   return (
     <footer className="bg-darkBlue">
-      <div className="mx-auto  space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-8">
+      <div className="mx-auto  space-y-8 px-4 py-16 sm:px-6 lg:space-y-16 lg:px-10">
         <hr className="bg-darkRed text-darkRed border-[1px] border-darkRed"></hr>
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
           <div>
@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
             <div>
               <p className="font-medium text-gray-900 dark:text-white">
                 Contact
@@ -182,9 +182,9 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex justify-between text-sm items-center">
+        <div className="flex lg:flex-row flex-col justify-between text-sm items-center">
           <p className="text-white">All rights reserved 2024 © ArtOfAttitude</p>
-          <p className="flex items-center gap-4">
+          <p className="flex items-center gap-4 mt-4 lg:mt-0">
             <span> Privacy Policy </span>
             <span> Terms & Conditions </span>
           </p>

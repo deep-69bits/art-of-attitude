@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isSticky, setIsSticky] = useState(false);
@@ -23,6 +24,17 @@ export default function Header() {
     };
   }, []);
 
+  const navLinks = [
+    { link: "/", name: "Home" },
+    { link: "/about", name: "About" },
+    { link: "/technology", name: "Technology" },
+    { link: "/nontechspace", name: "Non-Tech Space" },
+    { link: "/ourip", name: "Our IP's" },
+    { link: "/contact", name: "Contact" },
+  ];
+
+  const pathname = usePathname()
+  console.log(pathname)
   return (
     <header
       className={`transition-all duration-300 bg-[#011627] bg-opacity-60 backdrop-blur-lg shadow-md z-10 ${
@@ -30,7 +42,12 @@ export default function Header() {
       }`}
     >
       <nav className="flex justify-between items-center py-4 px-6 md:px-10 text-white">
-        <Image src="/aoa_final_logo_red.svg" alt="logo" width={200} height={100} />
+        <Image
+          src="/aoa_final_logo_red.svg"
+          alt="logo"
+          width={200}
+          height={100}
+        />
 
         {/* Menu button for mobile */}
         <div className="md:hidden">
@@ -75,36 +92,15 @@ export default function Header() {
 
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-6">
-          <li>
-            <Link href="/" className="text-lg">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link href="/about" className="text-lg">
-              About
-            </Link>
-          </li>
-          <li>
-            <a href="/services" className="text-lg">
-              Technology
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="text-lg">
-              Non-Tech Space
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="text-lg">
-              Our IP&#39;s
-            </a>
-          </li>
-          <li>
-            <a href="/contact" className="text-lg">
-              Contact
-            </a>
-          </li>
+          {navLinks.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link href={item.link} className={pathname==item.link? "text-lg font-medium hover:text-darkRed text-darkRed": "text-lg font-medium hover:text-darkRed"}>
+                  {item.name}
+                </Link>
+              </li>
+            );
+          })}
         </ul>
 
         <button
@@ -119,47 +115,20 @@ export default function Header() {
         {/* Mobile menu */}
         {menuOpen && (
           <ul className="absolute top-20 left-0 w-full bg-[#011627] bg-opacity-90 p-5 flex flex-col space-y-4 md:hidden">
-            <li>
-              <Link href="/" className="text-lg" onClick={() => setMenuOpen(false)}>
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link href="/about" className="text-lg" onClick={() => setMenuOpen(false)}>
-                About
-              </Link>
-            </li>
-            <li>
-              <a href="/services" className="text-lg" onClick={() => setMenuOpen(false)}>
-                Technology
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="text-lg" onClick={() => setMenuOpen(false)}>
-                Non-Tech Space
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="text-lg" onClick={() => setMenuOpen(false)}>
-                Our IP&#39;s
-              </a>
-            </li>
-            <li>
-              <a href="/contact" className="text-lg" onClick={() => setMenuOpen(false)}>
-                Contact
-              </a>
-            </li>
-            <li>
-              <button
-                onClick={() => {
-                  setMenuOpen(false);
-                  window.location.replace("/contact");
-                }}
-                className="w-full bg-darkRed py-2 text-center rounded-full font-semibold"
-              >
-                Request a call back
-              </button>
-            </li>
+            {navLinks.map((item, index) => {
+              return (
+                <li>
+                  <Link
+                    href={item.link}
+                    key={index}
+                    className={pathname==item.link? "text-lg font-medium hover:text-darkRed text-darkRed": "text-lg font-medium hover:text-darkRed"}
+                    onClick={() => setMenuOpen(false)}
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              );
+            })}
           </ul>
         )}
       </nav>

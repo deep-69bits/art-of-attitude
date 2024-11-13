@@ -13,9 +13,10 @@ import IPSSection from "@/components/Home/IPSSection";
 
 const ParallaxContainer = ({ children }) => {
   return (
-    <div className="mt-20">
+    <div className="lg:mt-20 mt-10">
       <Parallax
         easing="easeInOut"
+        className="hidden lg:block"
         shouldAlwaysCompleteAnimation={true}
         translateY={["-100px", "100px"]}
         opacity={[1, 0]}
@@ -23,6 +24,8 @@ const ParallaxContainer = ({ children }) => {
       >
         {children}
       </Parallax>
+
+      <div className="lg:hidden block">{children}</div>
     </div>
   );
 };
@@ -65,11 +68,12 @@ const Home = () => {
         <Image
           src={"/home/boxing.svg"}
           alt="Parallax Effect"
-          className="w-full"
+          className="w-full lg:block hidden"
           width={800}
           height={200}
         />
       </ParallaxContainer>
+
 
       <Container>
         <h2 className="font-bold text-6xl">Expand. Engage. </h2>
