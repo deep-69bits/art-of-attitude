@@ -117,7 +117,7 @@ export default function Header() {
           <ul className="absolute top-20 left-0 w-full bg-[#011627] bg-opacity-90 p-5 flex flex-col space-y-4 md:hidden">
             {navLinks.map((item, index) => {
               return (
-                <li>
+                <li key={index}>
                   <Link
                     href={item.link}
                     key={index}
