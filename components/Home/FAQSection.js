@@ -69,12 +69,12 @@ const FAQSection = () => {
   return (
     <Container>
       <h2 className="font-bold text-6xl capitalize">How do we do it?</h2>
-      <p className="text-5xl font-light mt-4">
+      <p className="text-5xl font-light mt-4 leading-relaxed">
         Dedicated to leveraging cutting-edge technology and creative solutions
         to engage fans with their favourite sports in exciting and unique ways.
       </p>
 
-      <div className="mt-20">
+      <div className="mt-20 flex flex-col gap-6">
         {FAQData.map((item, index) => {
           return (
             <div
@@ -84,7 +84,7 @@ const FAQSection = () => {
                   setQuestion(-1);
                 } else setQuestion(index);
               }}
-              className="cursor-pointer"
+              className="cursor-pointer "
             >
               <div className="text-5xl font-light mt-4 flex items-center justify-between">
                 <span>{item.question}</span>
@@ -93,9 +93,9 @@ const FAQSection = () => {
                 </span>
               </div>
               {question == index ? (
-                <div className="text-4xl lg:w-[95%] w-full font-light mt-4  items-center justify-between">
+                <div className="text-4xl lg:w-[95%] pt-4 flex flex-col gap-4 w-full font-light mt-4  items-start justify-between">
                   {item.answer.map((it,ind)=>{
-                    return <li key={ind}>{it}</li>
+                    return <li className="decoration-none list-none" key={ind}>{it}</li>
                   })}
                 </div>
               ) : null}

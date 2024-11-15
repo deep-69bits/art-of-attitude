@@ -9,16 +9,28 @@ import { useEffect, useState, useRef } from "react";
 import FAQSection from "@/components/Home/FAQSection";
 import FormSection from "@/components/Home/FormSection";
 import IPSSection from "@/components/Home/IPSSection";
+import { Fade } from "react-awesome-reveal";
 
+const TextReveal = ({ children }) => (
+  <Fade
+    direction="up"
+    triggerOnce
+    fraction={1} // The animation will trigger when 50% of the element is in view
+    duration={2000} // Duration of the animation in milliseconds
+    damping={0.4} // Optional: Adds a slight delay for a cascade effect
+  >
+    {children}
+  </Fade>
+);
 
 const ParallaxContainer = ({ children }) => {
   return (
-    <div className="lg:mt-20 mt-10">
+    <div className="">
       <Parallax
         easing="easeInOut"
         className="hidden lg:block"
         shouldAlwaysCompleteAnimation={true}
-        translateY={["-100px", "100px"]}
+        translateY={["100px", "-100px"]}
         opacity={[1, 0]}
         speed={-15}
       >
@@ -46,21 +58,19 @@ const Home = () => {
     visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
   };
 
-
-
   return (
     <Layout>
       <HeroSection />
 
       <Container>
-        <h2 className="font-medium italic text-xl capitalize">
+        <h2 className="font-medium italic text-2xl capitalize">
           Creating magic through tech and community!
         </h2>
-        <p className="text-5xl mt-6 font-light">
+        <p className="text-6xl mt-6 font-light leading-relaxed">
           We consult sports and entertainment companies and make them win by
           creating IP’s, both online and offline. From strategic consulting to
-          immersive fan experience, we build tailored solutions that drive
-          growth and set new standards across the industry.
+          creating immersive fan experiences, we design tailored solutions that
+          drive growth and set new standards across the industry.
         </p>
       </Container>
 
@@ -68,21 +78,29 @@ const Home = () => {
         <Image
           src={"/home/boxing.svg"}
           alt="Parallax Effect"
-          className="w-full lg:block hidden"
+          className="w-full"
           width={800}
           height={200}
         />
       </ParallaxContainer>
 
-
       <Container>
-        <h2 className="font-bold text-6xl">Expand. Engage. </h2>
-        <p className="text-5xl font-light mt-4">
-          Engage with fans with unique IP’s using sports, e-sports,
-          gamification, content, celebrities, collectibles.
-        </p>
-        <br />
-        <p className="text-5xl font-light">Collect and analyse fan data.</p>
+        <TextReveal>
+          <h2 className="font-bold text-6xl leading-relaxed">
+            Expand. Engage.{" "}
+          </h2>
+        </TextReveal>
+
+        <TextReveal>
+          <p className="text-5xl font-light mt-4 leading-relaxed">
+            Engage with fans with unique IP’s using sports, e-sports,
+            gamification, content, celebrities, collectibles.
+          </p>
+
+          <br />
+
+          <p className="text-5xl font-light">Collect and analyse fan data.</p>
+        </TextReveal>
       </Container>
 
       <ParallaxContainer>
@@ -96,12 +114,16 @@ const Home = () => {
       </ParallaxContainer>
 
       <Container>
-        <h2 className="font-bold text-6xl">Deliver Brand goals</h2>
-        <p className="text-5xl font-light mt-4">
-          Establish new media touch points. <br /> <br />
-          Build new interactive and immersive tech. <br /> <br />
-          Storytelling + brand narrative.
-        </p>
+        <TextReveal>
+          <h2 className="font-bold text-6xl">Deliver Brand goals</h2>
+        </TextReveal>
+        <TextReveal>
+          <p className="text-5xl font-light mt-4">
+            Establish new media touch points. <br /> <br />
+            Build new interactive and immersive tech. <br /> <br />
+            Storytelling + brand narrative.
+          </p>
+        </TextReveal>
       </Container>
 
       <ParallaxContainer>
@@ -110,13 +132,13 @@ const Home = () => {
           alt="boxing ring"
           width={400}
           height={400}
-          className="w-full mb-16" // Add margin to ensure separation
+          className="w-full h-screen mb-16" // Add margin to ensure separation
         />
       </ParallaxContainer>
 
       <Container>
         <h2 className="font-bold text-6xl">Deliver Business Goals</h2>
-        <p className="text-5xl font-light mt-4">
+        <p className="text-5xl font-light mt-4 ">
           Build new opportunities to monetise.
           <br /> <br />
           Sponsorships, Brand integrations, Media Rights.
@@ -134,13 +156,15 @@ const Home = () => {
                   variants={revealVariants}
                   className="overflow-hidden"
                 >
-                  <Image
-                    src={`/partners/AOA- home ${i + 3}.svg`}
-                    alt={`partner ${i + 3}`}
-                    width={300}
-                    height={300}
-                    className="w-full"
-                  />
+                  <TextReveal>
+                    <Image
+                      src={`/partners/AOA- home ${i + 3}.svg`}
+                      alt={`partner ${i + 3}`}
+                      width={300}
+                      height={300}
+                      className="w-full"
+                    />
+                  </TextReveal>
                 </motion.div>
               );
             })}

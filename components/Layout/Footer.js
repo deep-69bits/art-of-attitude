@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
           </div>
 
-          <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4">
+          <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
             <div>
               <p className="font-medium text-gray-900 dark:text-white">
                 Contact
@@ -137,7 +137,7 @@ const Footer = () => {
             </div>
 
 
-            <div>
+            {/* <div>
               <p className="font-medium text-gray-900 dark:text-white">Social Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
@@ -178,8 +178,8 @@ const Footer = () => {
                 </li>
 
               </ul>
-            </div>
-          </div>
+            </div>*/}
+          </div> 
         </div>
 
         <div className="flex lg:flex-row flex-col justify-between text-sm items-center">

@@ -27,9 +27,6 @@ export default function Header() {
   const navLinks = [
     { link: "/", name: "Home" },
     { link: "/about", name: "About" },
-    { link: "/technology", name: "Technology" },
-    { link: "/nontechspace", name: "Non-Tech Space" },
-    { link: "/ourip", name: "Our IP's" },
     { link: "/contact", name: "Contact" },
   ];
 
@@ -42,12 +39,14 @@ export default function Header() {
       }`}
     >
       <nav className="flex justify-between items-center py-4 px-6 md:px-10 text-white">
+        <Link href={'/'} >
         <Image
           src="/aoa_final_logo_red.svg"
           alt="logo"
           width={200}
           height={100}
-        />
+          />
+          </Link>
 
         {/* Menu button for mobile */}
         <div className="md:hidden">
@@ -103,14 +102,7 @@ export default function Header() {
           })}
         </ul>
 
-        <button
-          onClick={() => {
-            window.location.replace("/contact");
-          }}
-          className="hidden md:block w-48 lg:w-64 border-none bg-darkRed py-2 text-center rounded-full font-semibold"
-        >
-          Request a call back
-        </button>
+      
 
         {/* Mobile menu */}
         {menuOpen && (

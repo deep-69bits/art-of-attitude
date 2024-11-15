@@ -9,7 +9,7 @@ const page = () => {
   return (
     <Layout>
       <Container>
-        <div className="grid grid-flow-row lg:grid-cols-2 grid-cols-1 mt-20">
+        <div className="grid grid-flow-row lg:grid-cols-2 grid-cols-1 mt-20 gap-10">
           <div>
             <div className="font leading-[5rem] text-6xl capitalize">
               Get in touch <br /> with us & <br />{" "}

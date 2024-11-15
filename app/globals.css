@@ -6,3 +6,39 @@
     position: absolute;
     top: 10;
 }
+
+
+  /* Slider container */
+  .slider {
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+  }
+  
+  /* Sliding Text Track */
+  .slide-track {
+    display: flex;
+    animation: scroll 10s linear infinite;
+  }
+  
+  /* Each individual slide (word) */
+  .slide {
+    width: auto;
+    font-weight: bold;
+    white-space: nowrap;
+    margin-right: 50px; /* Space between words */
+    line-height: 100px;
+    color: white;
+  }
+  
+  /* Keyframes for scrolling effect */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100%)); /* Move the content completely to the left */
+    }
+  }
+  
