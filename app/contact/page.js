@@ -26,7 +26,14 @@ const page = () => {
                   height={40}
                   alt="building fill"
                 />
-                <div className="text-2xl">gg@artofattitude.com</div>
+                <div className="text-2xl">
+                  <a
+                    href="mailto:gg@artofattitude.com"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
+                    gg@artofattitude.com
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-8">
                 <Image
@@ -46,8 +53,7 @@ const page = () => {
                   alt="building fill"
                 />
                 <div className="text-2xl">
-                  Art Of Attitude Ventures LLP 1804,<br/> Sector 33 D Chandigarh,
-                  India
+                  Ventures LLP 1804, Sector 33 D <br /> Chandigarh, India
                 </div>
               </div>
             </div>

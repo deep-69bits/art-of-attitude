@@ -5,8 +5,8 @@ import Container from "../Container";
 const TeamSection = () => {
   return (
     <Container>
-      <h2 className="font-bold text-6xl capitalize">expertise & experience</h2>
-      <p className="text-5xl mt-6 font-light">
+      <h2 className="font-bold text-6xl capitalize my-10">expertise & experience</h2>
+      <p className="text-5xl mt-6 font-light leading-relaxed">
         Founding team comes with diverse experience in playing, managing some of
         the biggest events across the world!
       </p>

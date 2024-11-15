@@ -74,7 +74,7 @@ const FAQSection = () => {
         to engage fans with their favourite sports in exciting and unique ways.
       </p>
 
-      <div className="mt-20 flex flex-col gap-6">
+      <div className="mt-20 mb-20 flex flex-col gap-6">
         {FAQData.map((item, index) => {
           return (
             <div

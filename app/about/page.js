@@ -37,7 +37,7 @@ const page = () => {
       </ParallaxContainer>
       <Container>
         <h2 className="font-bold text-6xl capitalize">about us</h2>
-        <p className="text-5xl mt-6 font-light mb-8">
+        <p className="text-5xl mt-6 font-light mb-8 leading-relaxed">
           We are boutique agency that works at intersection of technology,
           sports, entertainment, monetisation. AoA works with talent, IP owners
           to build narrative and immersive experiences around popular culture.

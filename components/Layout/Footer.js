@@ -27,15 +27,17 @@ const Footer = () => {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <div className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
-                    Art Of Attitude Ventures LLP 1804, Sector 33 D Chandigarh,
-                    India
+                    Ventures LLP 1804, Sector 33 D <br /> Chandigarh, India
                   </div>
                 </li>
 
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                  <a
+                    href="mailto:gg@artofattitude.com"
+                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                  >
                     gg@artofattitude.com
-                  </div>
+                  </a>
                 </li>
 
                 <li>
@@ -54,32 +56,32 @@ const Footer = () => {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
-                  design and development
+                    design and development
                   </div>
                 </li>{" "}
                 <li>
                   <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
-                  web 3.0
+                    web 3.0
                   </div>
                 </li>{" "}
                 <li>
                   <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
-                  Virtual in-match events
+                    Virtual in-match events
                   </div>
                 </li>{" "}
                 <li>
                   <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
-                  immersive overlays  
+                    immersive overlays
                   </div>
                 </li>{" "}
                 <li>
                   <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
-                  vR experiences
+                    vR experiences
                   </div>
                 </li>{" "}
                 <li>
                   <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
-                  Immersive engagement
+                    Immersive engagement
                   </div>
                 </li>
               </ul>
@@ -97,34 +99,6 @@ const Footer = () => {
                     About
                   </Link>
                 </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    Technology
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    Non-Tech Space
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    href="/"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
-                  >
-                    Our IPs
-                  </Link>
-                </li>
-
                 <li>
                   <Link
                     href="/contact"
@@ -135,7 +109,6 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-
 
             {/* <div>
               <p className="font-medium text-gray-900 dark:text-white">Social Links</p>
@@ -179,7 +152,7 @@ const Footer = () => {
 
               </ul>
             </div>*/}
-          </div> 
+          </div>
         </div>
 
         <div className="flex lg:flex-row flex-col justify-between text-sm items-center">

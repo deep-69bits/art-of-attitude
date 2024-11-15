@@ -30,9 +30,8 @@ const ParallaxContainer = ({ children }) => {
         easing="easeInOut"
         className="hidden lg:block"
         shouldAlwaysCompleteAnimation={true}
-        translateY={["100px", "-100px"]}
         opacity={[1, 0]}
-        speed={-15}
+        speed={-10}
       >
         {children}
       </Parallax>
@@ -144,7 +143,7 @@ const Home = () => {
           Sponsorships, Brand integrations, Media Rights.
         </p>
 
-        <div className="border-[1px] border-darkRed p-10 mt-20 rounded-lg">
+        <div className="border-[1px] border-darkRed p-10 mb-40 mt-20 rounded-lg">
           <h2 className="font-bold text-6xl">Better Together</h2>
           <div className="grid grid-flow-row grid-cols-3 gap-6 mt-12">
             {[...Array(9).keys()].map((i) => {
