@@ -1,6 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 const Footer = () => {
   return (
     <footer className="bg-darkBlue">
@@ -20,13 +29,11 @@ const Footer = () => {
 
           <div className="grid grid-cols-2 gap-8 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-3">
             <div>
-              <p className="font-medium text-gray-900 dark:text-white">
-                Contact
-              </p>
+              <p className="font-medium  dark:text-white">Contact</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                  <div className="transition hover:opacity-75 dark:text-gray-200">
                     Ventures LLP 1804, Sector 33 D <br /> Chandigarh, India
                   </div>
                 </li>
@@ -34,14 +41,14 @@ const Footer = () => {
                 <li>
                   <a
                     href="mailto:gg@artofattitude.com"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="transition hover:opacity-75 dark:text-gray-200"
                   >
                     gg@artofattitude.com
                   </a>
                 </li>
 
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 dark:text-gray-200">
+                  <div className="transition hover:opacity-75 dark:text-gray-200">
                     +91 88604 26504
                   </div>
                 </li>
@@ -49,38 +56,36 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-medium text-gray-900 dark:text-white">
-                Expertise
-              </p>
+              <p className="font-medium   dark:text-white">Expertise</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  <div className="   transition hover:opacity-75 capitalize dark:text-gray-200">
                     design and development
                   </div>
                 </li>{" "}
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  <div className="   transition hover:opacity-75 capitalize dark:text-gray-200">
                     web 3.0
                   </div>
                 </li>{" "}
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  <div className="   transition hover:opacity-75 capitalize dark:text-gray-200">
                     Virtual in-match events
                   </div>
                 </li>{" "}
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  <div className="   transition hover:opacity-75 capitalize dark:text-gray-200">
                     immersive overlays
                   </div>
                 </li>{" "}
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  <div className="   transition hover:opacity-75 capitalize dark:text-gray-200">
                     vR experiences
                   </div>
                 </li>{" "}
                 <li>
-                  <div className="text-gray-700 transition hover:opacity-75 capitalize dark:text-gray-200">
+                  <div className="   transition hover:opacity-75 capitalize dark:text-gray-200">
                     Immersive engagement
                   </div>
                 </li>
@@ -88,13 +93,13 @@ const Footer = () => {
             </div>
 
             <div>
-              <p className="font-medium text-gray-900 dark:text-white">Pages</p>
+              <p className="font-medium   dark:text-white">Pages</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link
                     href="/about"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition hover:opacity-75 dark:text-gray-200"
                   >
                     About
                   </Link>
@@ -102,7 +107,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/contact"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition hover:opacity-75 dark:text-gray-200"
                   >
                     Contact
                   </Link>
@@ -111,13 +116,13 @@ const Footer = () => {
             </div>
 
             {/* <div>
-              <p className="font-medium text-gray-900 dark:text-white">Social Links</p>
+              <p className="font-medium   dark:text-white">Social Links</p>
 
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <Link
                     href="/about"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition hover:opacity-75 dark:text-gray-200"
                   >
                     Linkedin
                   </Link>
@@ -126,7 +131,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition hover:opacity-75 dark:text-gray-200"
                   >
                     Twitter 
                   </Link>
@@ -135,7 +140,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="#"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition hover:opacity-75 dark:text-gray-200"
                   >
                     Facebook
                   </Link>
@@ -144,7 +149,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition hover:opacity-75 dark:text-gray-200"
                   >
                     Instagram
                   </Link>
@@ -158,8 +163,127 @@ const Footer = () => {
         <div className="flex lg:flex-row flex-col justify-between text-sm items-center">
           <p className="text-white">All rights reserved 2024 © ArtOfAttitude</p>
           <p className="flex items-center gap-4 mt-4 lg:mt-0">
-            <span> Privacy Policy </span>
-            <span> Terms & Conditions </span>
+            <span>
+              <Dialog>
+                <DialogTrigger>Privacy Policy</DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle className="text-3xl">
+                      Privacy Policy
+                    </DialogTitle>
+                    <DialogDescription>
+                      <div className=" text-white p-2">
+                        <p className="mb-4">
+                          At <strong>Art of Attitude</strong> we your privacy is
+                          a priority. This Privacy Policy explains how we
+                          collect, use, and protect your information when you
+                          visit our website.
+                        </p>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          1. Information We Collect
+                        </h2>
+                        <ul className="list-disc ml-6 mb-4">
+                          <li>
+                            Personal Information: Name, email address, phone
+                            number, etc.
+                          </li>
+                          <li>
+                            Non-Personal Information: IP address, browser type,
+                            pages visited, etc.
+                          </li>
+                        </ul>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          2. How We Use Your Information
+                        </h2>
+                        <p className="mb-4">
+                          We use your information to provide, maintain, and
+                          improve our services, respond to inquiries, and comply
+                          with legal obligations.
+                        </p>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          3. Data Security
+                        </h2>
+                        <p className="mb-4">
+                          We implement reasonable measures to protect your data.
+                          However, no system is completely secure.
+                        </p>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          4. Contact Us
+                        </h2>
+                        <p>
+                          If you have any questions, contact us at:
+                          <br />
+                          <strong>Email:</strong> contact@artofattitude.com
+                          <br />
+                          <strong>Phone:</strong> +1 234 567 890
+                        </p>
+                      </div>
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>
+            </span>
+            <span>
+              <Dialog>
+                <DialogTrigger> Terms & Conditions</DialogTrigger>
+                <DialogContent>
+                  <DialogHeader>
+                    <DialogTitle className="text-3xl">
+                    Terms and Conditions
+                    </DialogTitle>
+                    <DialogDescription>
+                      <div className="text-white p-2">
+                        <p className="mb-4">
+                          Welcome to <strong>Art of Attitude</strong> we. By accessing our website, you agree
+                          to these Terms and Conditions. If you disagree, please
+                          do not use our services.
+                        </p>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          1. Use of the Site
+                        </h2>
+                        <ul className="list-disc ml-6 mb-4">
+                          <li>
+                            You must be at least 18 years old or have parental
+                            consent to use the Site.
+                          </li>
+                          <li>
+                            Prohibited activities include hacking, fraud, and
+                            violating laws.
+                          </li>
+                        </ul>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          2. Intellectual Property
+                        </h2>
+                        <p className="mb-4">
+                          All content, including text, images, and software, is
+                          owned by <strong>Art of Attitude</strong>.
+                          Reproduction or redistribution is prohibited without
+                          our consent.
+                        </p>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          3. Limitation of Liability
+                        </h2>
+                        <p className="mb-4">
+                          We are not liable for any damages resulting from the
+                          use of the Site, to the fullest extent permitted by
+                          law.
+                        </p>
+                        <h2 className="text-2xl font-semibold mt-6 mb-4">
+                          4. Contact Us
+                        </h2>
+                        <p>
+                          If you have any questions, contact us at:
+                          <br />
+                          <strong>Email:</strong> contact@artofattitude.com
+                          <br />
+                          <strong>Phone:</strong> +1 234 567 890
+                        </p>
+                      </div>
+                    </DialogDescription>
+                  </DialogHeader>
+                </DialogContent>
+              </Dialog>{" "}
+            </span>
           </p>
         </div>
       </div>

@@ -29,7 +29,7 @@ const page = () => {
                 <div className="text-2xl">
                   <a
                     href="mailto:gg@artofattitude.com"
-                    className="text-gray-700 transition hover:opacity-75 dark:text-gray-200"
+                    className="transition hover:opacity-75 dark:text-gray-200"
                   >
                     gg@artofattitude.com
                   </a>

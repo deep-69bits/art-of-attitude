@@ -95,7 +95,7 @@ const FAQSection = () => {
               {question == index ? (
                 <div className="text-4xl lg:w-[95%] pt-4 flex flex-col gap-4 w-full font-light mt-4  items-start justify-between">
                   {item.answer.map((it,ind)=>{
-                    return <li className="decoration-none list-none" key={ind}>{it}</li>
+                    return <li className="decoration-none text-white list-none" key={ind}>{it}</li>
                   })}
                 </div>
               ) : null}
