@@ -92,14 +92,14 @@ const Home = () => {
         </TextReveal>
 
         <TextReveal>
-          <p className="text-5xl font-light mt-4 leading-relaxed">
+          <p className="text-6xl font-light mt-4 leading-relaxed">
             Engage with fans with unique IP’s using sports, e-sports,
             gamification, content, celebrities, collectibles.
           </p>
 
           <br />
 
-          <p className="text-5xl font-light">Collect and analyse fan data.</p>
+          <p className="text-6xl font-light">Collect and analyse fan data.</p>
         </TextReveal>
       </Container>
 
@@ -118,7 +118,7 @@ const Home = () => {
           <h2 className="font-bold text-6xl">Deliver Brand goals</h2>
         </TextReveal>
         <TextReveal>
-          <p className="text-5xl font-light mt-4">
+          <p className="text-6xl font-light mt-4">
             Establish new media touch points. <br /> <br />
             Build new interactive and immersive tech. <br /> <br />
             Storytelling + brand narrative.
@@ -138,15 +138,15 @@ const Home = () => {
 
       <Container>
         <h2 className="font-bold text-6xl">Deliver Business Goals</h2>
-        <p className="text-5xl font-light mt-4 ">
+        <p className="text-6xl font-light mt-4 ">
           Build new opportunities to monetise.
           <br /> <br />
           Sponsorships, Brand integrations, Media Rights.
         </p>
 
-        <div className="border-[1px] border-darkRed p-10 mt-10 rounded-lg">
+        <div className="border-[1px] border-darkRed p-10 mt-20 rounded-lg">
           <h2 className="font-bold text-6xl">Better Together</h2>
-          <div className="grid grid-flow-row grid-cols-3 gap-3 mt-10">
+          <div className="grid grid-flow-row grid-cols-3 gap-6 mt-12">
             {[...Array(9).keys()].map((i) => {
               return (
                 <motion.div
