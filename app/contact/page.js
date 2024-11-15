@@ -13,9 +13,7 @@ const page = () => {
           <div>
             <div className="font leading-[5rem] text-6xl capitalize">
               Get in touch <br /> with us & <br />{" "}
-              <span className="text-darkRed">
-                we will get <br /> you started
-              </span>
+              
             </div>
 
             <div className="flex flex-col items-start mt-8 gap-4">
@@ -53,7 +51,7 @@ const page = () => {
                   alt="building fill"
                 />
                 <div className="text-2xl">
-                  Ventures LLP 1804, Sector 33 D <br /> Chandigarh, India
+                  1804, Sector 33 D <br /> Chandigarh, India
                 </div>
               </div>
             </div>

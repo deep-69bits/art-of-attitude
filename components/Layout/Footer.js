@@ -34,7 +34,7 @@ const Footer = () => {
               <ul className="mt-6 space-y-4 text-sm">
                 <li>
                   <div className="transition hover:opacity-75 dark:text-gray-200">
-                    Ventures LLP 1804, Sector 33 D <br /> Chandigarh, India
+                    1804, Sector 33 D <br /> Chandigarh, India
                   </div>
                 </li>
 
