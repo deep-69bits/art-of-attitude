@@ -13,7 +13,6 @@ const page = () => {
           <div>
             <div className="font leading-[5rem] text-6xl capitalize">
               Get in touch <br /> with us & <br />{" "}
-              
             </div>
 
             <div className="flex flex-col items-start mt-8 gap-4">
