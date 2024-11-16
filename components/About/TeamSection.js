@@ -14,6 +14,7 @@ const TeamSection = () => {
       <div className="grid grid-flow-row lg:grid-cols-2 grid-cols-1 gap-8 mt-10 md:grid-cols-2">
         <Card
           image="/about/img1.svg"
+          link={'https://linkedin.com/in/padamjitsandhu'}
           title="Padamjit Sandhu"
           subtitle="linkedin.com/in/padamjitsandhu"
           description="Accomplished Sports Management professional with over 28 years of work experience. Strong exposure across brand, marketing, strategy, international & domestic alliances, sports federations, player management, leagues, projects &... READ MORE"
@@ -21,6 +22,7 @@ const TeamSection = () => {
         <Card
           image="/about/img2.svg"
           title="Gaurav Gupta"
+          link={'https://linkedin.com/in/gaurav-gupta-21829213'}
           subtitle="linkedin.com/in/gaurav-gupta-21829213"
           description="Over 14 years of experience in business operations, business development and overall PnL. Driving growth opportunities and managing strategic partnerships for the organisation, while defining consumer journeys in an ever-evolving Fan ... READ MORE"
         />

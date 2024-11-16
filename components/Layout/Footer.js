@@ -41,7 +41,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="mailto:gg@artofattitude.com"
-                    className="transition hover:opacity-75 dark:text-gray-200"
+                    className="transition hover:text-darkRed dark:text-gray-200"
                   >
                     gg@artofattitude.com
                   </a>
@@ -95,11 +95,11 @@ const Footer = () => {
             <div>
               <p className="font-medium   dark:text-white">Pages</p>
 
-              <ul className="mt-6 space-y-4 text-sm">
+              <ul className="mt-6 space-y-4 text-sm ">
                 <li>
                   <Link
                     href="/about"
-                    className="   transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition  dark:text-gray-200 hover:text-darkRed"
                   >
                     About
                   </Link>
@@ -107,7 +107,7 @@ const Footer = () => {
                 <li>
                   <Link
                     href="/contact"
-                    className="   transition hover:opacity-75 dark:text-gray-200"
+                    className="   transition  dark:text-gray-200  hover:text-darkRed"
                   >
                     Contact
                   </Link>
@@ -161,8 +161,8 @@ const Footer = () => {
         </div>
 
         <div className="flex lg:flex-row flex-col justify-between text-sm items-center">
-          <p className="text-white">All rights reserved 2024 © ArtOfAttitude</p>
-          <p className="flex items-center gap-4 mt-4 lg:mt-0">
+          <div className="text-white">All rights reserved 2024 © ArtOfAttitude</div>
+          <div className="flex items-center gap-4 mt-4 lg:mt-0">
             <span>
               <Dialog>
                 <DialogTrigger>Privacy Policy</DialogTrigger>
@@ -173,12 +173,12 @@ const Footer = () => {
                     </DialogTitle>
                     <DialogDescription>
                       <div className=" text-white p-2">
-                        <p className="mb-4">
+                        <div className="mb-4">
                           At <strong>Art of Attitude</strong> we your privacy is
                           a priority. This Privacy Policy explains how we
                           collect, use, and protect your information when you
                           visit our website.
-                        </p>
+                        </div>
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           1. Information We Collect
                         </h2>
@@ -195,28 +195,28 @@ const Footer = () => {
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           2. How We Use Your Information
                         </h2>
-                        <p className="mb-4">
+                        <div className="mb-4">
                           We use your information to provide, maintain, and
                           improve our services, respond to inquiries, and comply
                           with legal obligations.
-                        </p>
+                        </div>
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           3. Data Security
                         </h2>
-                        <p className="mb-4">
+                        <div className="mb-4">
                           We implement reasonable measures to protect your data.
                           However, no system is completely secure.
-                        </p>
+                        </div>
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           4. Contact Us
                         </h2>
-                        <p>
+                        <div>
                           If you have any questions, contact us at:
                           <br />
                           <strong>Email:</strong> contact@artofattitude.com
                           <br />
                           <strong>Phone:</strong> +1 234 567 890
-                        </p>
+                        </div>
                       </div>
                     </DialogDescription>
                   </DialogHeader>
@@ -233,11 +233,11 @@ const Footer = () => {
                     </DialogTitle>
                     <DialogDescription>
                       <div className="text-white p-2">
-                        <p className="mb-4">
+                        <div className="mb-4">
                           Welcome to <strong>Art of Attitude</strong> we. By accessing our website, you agree
                           to these Terms and Conditions. If you disagree, please
                           do not use our services.
-                        </p>
+                        </div>
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           1. Use of the Site
                         </h2>
@@ -254,37 +254,37 @@ const Footer = () => {
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           2. Intellectual Property
                         </h2>
-                        <p className="mb-4">
+                        <div className="mb-4">
                           All content, including text, images, and software, is
                           owned by <strong>Art of Attitude</strong>.
                           Reproduction or redistribution is prohibited without
                           our consent.
-                        </p>
+                        </div>
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           3. Limitation of Liability
                         </h2>
-                        <p className="mb-4">
+                        <div className="mb-4">
                           We are not liable for any damages resulting from the
                           use of the Site, to the fullest extent permitted by
                           law.
-                        </p>
+                        </div>
                         <h2 className="text-2xl font-semibold mt-6 mb-4">
                           4. Contact Us
                         </h2>
-                        <p>
+                        
                           If you have any questions, contact us at:
                           <br />
                           <strong>Email:</strong> contact@artofattitude.com
                           <br />
                           <strong>Phone:</strong> +1 234 567 890
-                        </p>
+
                       </div>
                     </DialogDescription>
                   </DialogHeader>
                 </DialogContent>
               </Dialog>{" "}
             </span>
-          </p>
+          </div>
         </div>
       </div>
     </footer>
