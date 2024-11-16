@@ -65,7 +65,7 @@ const Home = () => {
         <h2 className="font-medium italic text-2xl capitalize">
           Creating magic through tech and community!
         </h2>
-        <p className="text-6xl mt-6 font-light leading-relaxed">
+        <p className="lg:text-6xl text-2xl mt-6 font-light leading-relaxed">
           We consult sports and entertainment companies and make them win by
           creating IP’s, both online and offline. From strategic consulting to
           creating immersive fan experiences, we design tailored solutions that
@@ -85,20 +85,20 @@ const Home = () => {
 
       <Container>
         <TextReveal>
-          <h2 className="font-bold text-6xl leading-relaxed">
+          <h2 className="font-bold lg:text-6xl text-3xl leading-relaxed">
             Expand. Engage.{" "}
           </h2>
         </TextReveal>
 
         <TextReveal>
-          <p className="text-6xl font-light mt-4 leading-relaxed">
+          <p className="lg:text-6xl text-2xl font-light mt-4 leading-relaxed">
             Engage with fans with unique IP’s using sports, e-sports,
             gamification, content, celebrities, collectibles.
           </p>
 
           <br />
 
-          <p className="text-6xl font-light">Collect and analyse fan data.</p>
+          <p className="lg:text-6xl text-2xl font-light">Collect and analyse fan data.</p>
         </TextReveal>
       </Container>
 
@@ -114,10 +114,10 @@ const Home = () => {
 
       <Container>
         <TextReveal>
-          <h2 className="font-bold text-6xl">Deliver Brand goals</h2>
+          <h2 className="font-bold lg:text-6xl text-3xl">Deliver Brand goals</h2>
         </TextReveal>
         <TextReveal>
-          <p className="text-6xl font-light mt-4">
+          <p className="lg:text-6xl text-2xl font-light mt-4">
             Establish new media touch points. <br /> <br />
             Build new interactive and immersive tech. <br /> <br />
             Storytelling + brand narrative.
@@ -136,15 +136,15 @@ const Home = () => {
       </ParallaxContainer>
 
       <Container>
-        <h2 className="font-bold text-6xl">Deliver Business Goals</h2>
-        <p className="text-6xl font-light mt-4 ">
+        <h2 className="font-bold lg:text-6xl text-3xl">Deliver Business Goals</h2>
+        <p className="lg:text-6xl text-2xl font-light mt-4 ">
           Build new opportunities to monetise.
           <br /> <br />
           Sponsorships, Brand integrations, Media Rights.
         </p>
 
         <div className="border-[1px] border-darkRed p-10 mb-40 mt-20 rounded-lg">
-          <h2 className="font-bold text-6xl">Better Together</h2>
+          <h2 className="font-bold lg:text-6xl text-3xl">Better Together</h2>
           <div className="grid grid-flow-row grid-cols-3 gap-6 mt-12">
             {[...Array(9).keys()].map((i) => {
               return (

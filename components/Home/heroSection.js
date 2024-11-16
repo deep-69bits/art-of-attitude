@@ -19,7 +19,7 @@ export default function HeroSection() {
 
       {/* Sliding Text */}
       <div className="slider h-screen flex flex-col pb-10 justify-end">
-        <div className="slide-track mt-80, text-[160px]">
+        <div className="slide-track mt-80 text-[160px]">
           {/* Duplicate the words array twice to create a seamless loop */}
           {[...words, ...words].map((word, index) => (
             <span key={index} className="slide pb-10">

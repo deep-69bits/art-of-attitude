@@ -68,8 +68,8 @@ const FAQSection = () => {
   const [question, setQuestion] = useState(-1);
   return (
     <Container>
-      <h2 className="font-bold text-6xl capitalize">How do we do it?</h2>
-      <p className="text-5xl font-light mt-4 leading-relaxed">
+      <h2 className="font-bold lg:text-6xl text-3xl capitalize">How do we do it?</h2>
+      <p className="lg:text-6xl text-2xl font-light mt-4 leading-relaxed">
         Dedicated to leveraging cutting-edge technology and creative solutions
         to engage fans with their favourite sports in exciting and unique ways.
       </p>
@@ -86,14 +86,14 @@ const FAQSection = () => {
               }}
               className="cursor-pointer "
             >
-              <div className="text-5xl font-light mt-4 flex items-center justify-between">
+              <div className="lg:text-5xl text-3xl font-light mt-4 flex items-center justify-between">
                 <span>{item.question}</span>
                 <span className={question==index?"rotate-180":""}>
                   <Arrow />
                 </span>
               </div>
               {question == index ? (
-                <div className="text-4xl lg:w-[95%] pt-4 flex flex-col gap-4 w-full font-light mt-4  items-start justify-between">
+                <div className="lg:text-4xl text-2xl lg:w-[95%] pt-4 flex flex-col gap-4 w-full font-light mt-4  items-start justify-between">
                   {item.answer.map((it,ind)=>{
                     return <li className="decoration-none text-white list-none" key={ind}>{it}</li>
                   })}
