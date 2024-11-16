@@ -11,7 +11,7 @@ const Card = ({ image, title, subtitle, link, description }) => {
         width={400}
         height={400}
       />
-      <div className="p-6">
+      <div className="py-6">
         <h2 className="font-light text-4xl mb-2">{title}</h2>
         {link ? (
           <a href={link} className="my-4 text-darkRed">{subtitle}</a>

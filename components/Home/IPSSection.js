@@ -23,8 +23,8 @@ const ParallaxContainer = ({ children }) => {
 const IPSSection = () => {
   return (
     <Container>
-      <h2 className="font-bold text-6xl">Our IPs</h2>
-      <p className="text-5xl font-light mt-4">
+      <h2 className="font-bold lg:text-6xl text-4xl">Our IPs</h2>
+      <p className="lg:text-5xl text-3xl font-light mt-4">
         See some the best sports IPs that we have delivered.
       </p>
 

@@ -63,7 +63,7 @@ export const Form = () => {
       onSubmit={handleSubmit}
       className="flex flex-col text-black justify-between"
     >
-      <div className="capitalize text-white text-6xl mb-10 font-light">
+      <div className="capitalize text-white lg:text-6xl  text-4xl mb-10 font-light">
         please fill the form and we will contact you
       </div>
       <input

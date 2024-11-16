@@ -92,7 +92,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div>
+            <div className="hidden lg:block">
               <p className="font-medium   dark:text-white">Pages</p>
 
               <ul className="mt-6 space-y-4 text-sm ">

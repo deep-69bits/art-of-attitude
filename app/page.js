@@ -35,8 +35,6 @@ const ParallaxContainer = ({ children }) => {
       >
         {children}
       </Parallax>
-
-      <div className="lg:hidden block">{children}</div>
     </div>
   );
 };
@@ -83,6 +81,14 @@ const Home = () => {
         />
       </ParallaxContainer>
 
+      <Image
+          src={"/home/Rectangle 21.svg"}
+          alt="Parallax Effect"
+          className="w-full lg:hidden block"
+          width={800}
+          height={200}
+        />
+
       <Container>
         <TextReveal>
           <h2 className="font-bold lg:text-6xl text-4xl leading-relaxed">
@@ -112,6 +118,14 @@ const Home = () => {
         />
       </ParallaxContainer>
 
+      <Image
+          src={"/home/Rectangle 24.svg"}
+          alt="Parallax Effect"
+          className="w-full lg:hidden block"
+          width={800}
+          height={200}
+        />
+
       <Container>
         <TextReveal>
           <h2 className="font-bold lg:text-6xl text-4xl">Deliver Brand goals</h2>
@@ -135,6 +149,14 @@ const Home = () => {
         />
       </ParallaxContainer>
 
+      <Image
+          src={"/home/Rectangle 23.svg"}
+          alt="Parallax Effect"
+          className="w-full lg:hidden block"
+          width={800}
+          height={200}
+        />
+
       <Container>
         <h2 className="font-bold lg:text-6xl text-4xl">Deliver Business Goals</h2>
         <p className="lg:text-6xl text-3xl font-light mt-4 ">
@@ -143,9 +165,9 @@ const Home = () => {
           Sponsorships, Brand integrations, Media Rights.
         </p>
 
-        <div className="border-[1px] border-darkRed p-10 mb-40 mt-20 rounded-lg">
+        <div className="border-[1px] border-darkRed lg:p-10 p-4 lg:mb-40 mb-10 mt-20 rounded-lg">
           <h2 className="font-bold lg:text-6xl text-3xl">Better Together</h2>
-          <div className="grid grid-flow-row grid-cols-3 gap-6 mt-12">
+          <div className="grid grid-flow-row grid-cols-3 lg:gap-6 gap-1 mt-12">
             {[...Array(9).keys()].map((i) => {
               return (
                 <motion.div
@@ -181,6 +203,14 @@ const Home = () => {
         />
       </ParallaxContainer>
 
+      <Image
+          src={"/home/Rectangle 25.svg"}
+          alt="Parallax Effect"
+          className="w-full lg:hidden block"
+          width={800}
+          height={200}
+        />
+
       <FAQSection />
 
       <ParallaxContainer>
@@ -192,6 +222,16 @@ const Home = () => {
           className="w-full mb-16" // Add margin to ensure separation
         />
       </ParallaxContainer>
+
+
+      <Image
+          src={"/home/Rectangle 26.svg"}
+          alt="Parallax Effect"
+          className="w-full lg:hidden block"
+          width={800}
+          height={200}
+        />
+
       <IPSSection />
       <FormSection />
     </Layout>

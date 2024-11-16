@@ -11,15 +11,22 @@ export default function HeroSection() {
         easing="easeInOut"
         opacity={[1, 0]}
         speed={-10}
-        className="bg-cover bg-center h-full absolute w-full"
+        className="bg-cover bg-center lg:block hidden h-full absolute w-full"
         style={{
           backgroundImage: "url('/home/hero.svg')",
         }}
       />
+      <div 
+       className="bg-cover bg-center block lg:hidden h-full absolute w-full"
+       style={{
+         backgroundImage: "url('/home/hero.svg')",
+       }}>
+
+      </div>
 
       {/* Sliding Text */}
       <div className="slider h-screen flex flex-col pb-10 justify-end">
-        <div className="slide-track mt-80 text-[160px]">
+        <div className="slide-track mt-80 lg:text-[160px] text-[80px]">
           {/* Duplicate the words array twice to create a seamless loop */}
           {[...words, ...words].map((word, index) => (
             <span key={index} className="slide pb-10">
