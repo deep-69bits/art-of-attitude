@@ -116,7 +116,7 @@ export const Form = () => {
           required
         ></textarea>
       </div>
-      <div className="mt-8 flex items-center gap-2">
+      {/* <div className="mt-8 flex items-center gap-2">
         <input
           type="checkbox"
           name="agree"
@@ -127,7 +127,7 @@ export const Form = () => {
         <div className="text-sm text-white opacity-80">
           I agree with terms of Privacy Policy
         </div>
-      </div>
+      </div> */}
       <button
         type="submit"
         className="w-full text-white mt-8 border-none bg-darkRed py-3 text-center rounded-full font-semibold"

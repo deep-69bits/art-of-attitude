@@ -128,7 +128,7 @@ const Home = () => {
 
       <Container>
         <TextReveal>
-          <h2 className="font-bold lg:text-6xl text-4xl">Deliver Brand goals</h2>
+          <h2 className="font-bold lg:text-6xl text-4xl capitalize">Deliver Brand goals</h2>
         </TextReveal>
         <TextReveal>
           <p className="lg:text-6xl text-3xl font-light mt-4">
@@ -165,7 +165,7 @@ const Home = () => {
           Sponsorships, Brand integrations, Media Rights.
         </p>
 
-        <div className="border-[1px] border-darkRed lg:p-10 p-4 lg:mb-40 mb-10 mt-20 rounded-lg">
+        <div className="border-[1px] border-darkRed lg:p-10 p-4 lg:mb-40 mb-10 mt-20 rounded-lg lg:block hidden">
           <h2 className="font-bold lg:text-6xl text-3xl">Better Together</h2>
           <div className="grid grid-flow-row grid-cols-3 lg:gap-6 gap-1 mt-12">
             {[...Array(9).keys()].map((i) => {
