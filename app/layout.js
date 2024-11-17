@@ -5,7 +5,7 @@ import "./globals.css";
 const poppins = Poppins({ subsets: ['latin'],weight:['400'] })
 
 export const metadata = {
-  title: "Art Of Attitude",
+  title: "Art Of Attitude | Sports Management",
   description: "Sports Management",
   icons: {
     icon: "/favicon.svg", // Path to your favicon file
@@ -13,7 +13,7 @@ export const metadata = {
   openGraph: {
     type: "website",
     url: "https://artofattitude.com/", // Replace with your website URL
-    title: "Art Of Attitude",
+    title: "Art Of Attitude | Sports Management",
     description: "Sports Management",
     images: [
       {
@@ -23,6 +23,8 @@ export const metadata = {
         alt: "Art Of Attitude OG Image",
       },
     ],
+    locale: "en_US",
+    type: "website",
   },
 };
 export default function RootLayout({ children }) {
