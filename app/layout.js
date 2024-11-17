@@ -17,7 +17,7 @@ export const metadata = {
     description: "Sports Management",
     images: [
       {
-        url: "/og_image.svg", // Path to your Open Graph image
+        url: "https://artofattitude.com/og_image.svg", // Path to your Open Graph image
         width: 1200,
         height: 630,
         alt: "Art Of Attitude OG Image",
