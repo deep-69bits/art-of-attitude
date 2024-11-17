@@ -54,7 +54,7 @@ export const Form = () => {
       email: "",
       mobileNumber: "",
       projectDetails: "",
-      agree: false,
+      agree: true,
     });
   };
 
@@ -64,7 +64,7 @@ export const Form = () => {
       className="flex flex-col text-black justify-between"
     >
       <div className="capitalize text-white lg:text-6xl  text-4xl mb-10 font-light">
-        please fill the form and we will contact you
+        please fill the contact form and we will connect with you
       </div>
       <input
         placeholder="name"

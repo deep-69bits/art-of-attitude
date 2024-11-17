@@ -160,7 +160,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="flex lg:flex-row flex-col justify-between text-sm items-center">
+        <div className="flex lg:flex-row flex-col justify-between text-sm ">
           <div className="text-white">All rights reserved 2024 © ArtOfAttitude</div>
           <div className="flex items-center gap-4 mt-4 lg:mt-0">
             <span>
